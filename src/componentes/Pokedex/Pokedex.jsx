@@ -13,7 +13,9 @@ export const Pokedex = () => {
       .then((response) => response.json())
       .then((data) => {
         setPokemon(data);
-        console.log(data);
+      })
+      .catch(() => {
+        alert("Pokemon no encontrado");
       });
   };
   const cambiarState = (e) => {
