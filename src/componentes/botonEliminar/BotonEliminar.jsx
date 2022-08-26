@@ -1,14 +1,11 @@
-import React from 'react'
+import React from "react";
 
-
-function BotonEliminar({Tareas, borrarTodo})  {
+function BotonEliminar({ Tareas, borrarTodo }) {
   return (
-    <button onClick={()=>borrarTodo(Tareas)} className='btnBorrarTodo'>
-        Borrar tareas
+    <button onClick={() => borrarTodo(Tareas)} className="btnBorrarTodo">
+      Borrar tareas
     </button>
-  )
+  );
 }
 
-export {BotonEliminar}
-
-
+export { BotonEliminar };

@@ -12,7 +12,6 @@ export const Pokedex = () => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${busqueda}`)
       .then((response) => response.json())
       .then((data) => {
-        
         setPokemon(data);
         console.log(data);
       });
@@ -38,14 +37,15 @@ export const Pokedex = () => {
       </form>
 
       <div className="resultado">
-        {pokemon &&
-            <PokeDetail
-              name={pokemon.name}
-              abilityNames={pokemon.abilities.map(ability=>ability.ability.name)}
-              image={pokemon.sprites.front_default}
-            />
-          
-        }
+        {pokemon && (
+          <PokeDetail
+            name={pokemon.name}
+            abilityNames={pokemon.abilities.map(
+              (ability) => ability.ability.name
+            )}
+            image={pokemon.sprites.front_default}
+          />
+        )}
       </div>
     </div>
   );
