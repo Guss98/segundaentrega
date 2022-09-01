@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavBar } from "../NavBar/NavBar";
 import "./PokedexStyles.css";
 import PokeDetail from "./PokeDetail";
+import { GlobalStyles } from "../estilos/globalStyles";
 
 export const Pokedex = () => {
   const [pokemon, setPokemon] = useState(null);
@@ -49,6 +50,7 @@ export const Pokedex = () => {
           />
         )}
       </div>
+      <GlobalStyles />
     </div>
   );
 };

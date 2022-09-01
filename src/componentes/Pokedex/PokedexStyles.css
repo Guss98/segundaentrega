@@ -1,5 +1,4 @@
-.pokedex{
-  
+.pokedex {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -10,11 +9,72 @@
   margin: 128px auto;
   border-radius: 10px;
   padding-bottom: 32px;
-  
 }
 
-.fotoPrueba {
-  height: 550px;
-  width: 550px;
-  z-index: 999;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.cardPoke {
+  background-color: white;
+  width: 326px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card-header {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body-image {
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: calc(-48px - 5px);
+  background-color: white;
+}
+
+.card-body-name {
+  text-transform: uppercase;
+  margin-top: 0rem;
+  font-size: 1.8rem;
+}
+
+.habilidadesTitulo {
+  margin: 0;
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1.5px solid rgba(153, 153, 153, 0.383);
+}
+
+.card-footer-social {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  width: 100%;
+}
+
+.habilidades {
+  display: flex;
+  margin: 25px;
+}
+
+.habilidad {
+  list-style: none;
+  margin: 0 2.3rem;
 }

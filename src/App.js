@@ -6,9 +6,10 @@ import { Pokedex } from "./componentes/Pokedex/Pokedex";
 function App() {
   return (
     <div className="appTo-Do">
-      <Home />
-      <Pokedex />
-      <GlobalStyles></GlobalStyles>
+      <GlobalStyles>
+        <Home />
+        <Pokedex />
+      </GlobalStyles>
     </div>
   );
 }
